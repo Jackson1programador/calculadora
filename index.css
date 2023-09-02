@@ -1,0 +1,82 @@
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 100%;
+}
+
+.container-calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: auto;
+    margin-top: 5em;
+    border-radius: 1em;
+}
+
+.visor{
+    margin-bottom: 2rem;
+    padding: 2rem 0.3rem;
+    font-size: 2rem;
+    background-color: orange;
+    display: flex;
+    text-align: end;
+    border: none;
+    outline: 2px solid white;
+    margin-top: 1rem;
+    
+}  
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rws: repeat(4, 1fr);
+    gap: 0.8rem;
+
+}
+
+
+.iten-grid{
+   border: none;
+   padding: 0.3rem 0.3rem;
+   font-size: 1.5rem;
+   border-radius: 20rem;
+   
+}
+
+.iten-grid:hover{
+    opacity: 0.5;
+}
+
+
+.ce, .igual, .operacao{
+    background-color: orange;
+ 
+}
+
+.soma{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.subtracao{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.multiplicacao{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.divisao{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+

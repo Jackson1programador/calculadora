@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
 </head>
 <body>
 
-    <input class="visor" readonly value="0">
+    <div class="container-calculadora">
 
-    <div class="div-numeros">
-        <button class="numero" value="0">0</button>
-        <button class="numero" value="1">1</button>
-        <button class="numero" value="2">2</button>
-        <button class="numero" value="3">3</button>
-        <button class="numero" value="4">4</button>
-        <button class="numero" value="5">5</button>
-        <button class="numero" value="6">6</button>
-        <button class="numero" value="7">7</button>
-        <button class="numero" value="8">8</button>
-        <button class="numero" value="9">9</button>
-    </div>
+        
+        <input class="visor" readonly value="0">
 
-    <div class="div-operacoes">
-        <button class="operacao soma" value="+">+</button>
-        <button class="operacao subtracao" value="-">-</button>
-        <button class="operacao multiplicacao" value="*">*</button>
-        <button class="operacao divisao" value="/">/</button>
-        <button class="igual" value="=">=</button>
-        <button class="ce" value="CE">CE</button>
-    </div>
+        <div class="container-btn row" >
+             <button class="numero iten-grid" value="1">1</button>
+             <button class="numero iten-grid" value="2">2</button>
+             <button class="numero iten-grid" value="3">3</button>
+             <button class="numero iten-grid" value="4">4</button>
+             <button class="numero iten-grid" value="5">5</button>
+             <button class="numero iten-grid" value="6">6</button>
+             <button class="numero iten-grid" value="7">7</button>
+             <button class="numero iten-grid" value="8">8</button>
+             <button class="numero iten-grid" value="9">9</button>
+             <button class="ce iten-grid" value="CE">CE</button>
+             <button class="numero iten-grid" value="0">0</button>
+             <button class="igual iten-grid" value="=">=</button>
+        
+        
+             <button class="operacao soma iten-grid" value="+">+</button>
+             <button class="operacao subtracao iten-grid" value="-">-</button>
+             <button class="operacao multiplicacao iten-grid" value="*">*</button>
+             <button class="operacao divisao iten-grid" value="/">/</button>
+        </div>
     
     <script src="index.js"></script>
 
