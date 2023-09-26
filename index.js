@@ -20,7 +20,12 @@
     }
 
     function concatenaCaracteresNoVisor(){
+        if(parseFloat(visor.value) == 0){
+            visor.value = `${this.value}`
+        }else{
         visor.value = `${visor.value}${this.value}`
+        }
+
         operacaoSobrepoemOperacaoAnterior(visor.value, operacao)
         retornaResultadoSePossuirMaisDeUmaOperacao() 
     }
@@ -119,5 +124,6 @@
 
 
     inicio()
+   
 
 })(window, document);
